@@ -2,6 +2,7 @@ package mapa;
 
 import GUI.GUI;
 import Obstaculos.Grass;
+import Obstaculos.Rock;
 import Obstaculos.Water;
 import main.gameObject;
 
@@ -27,9 +28,13 @@ public class celda {
     			listaObjetosLogicos[0]=new Water(this,0);
     			break;
 				
-				case 'p':
-					listaObjetosLogicos[2]= new Grass(this,2);
-					break;
+			case 'p':
+				listaObjetosLogicos[2]= new Grass(this,2);
+				break;
+					
+			case 'b' :
+				listaObjetosLogicos[0] = new Rock(this,0);
+				break;
 			}
 			
 			
