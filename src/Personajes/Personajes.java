@@ -9,7 +9,7 @@ public abstract class Personajes extends gameObject {
 
 	protected Icon[] graficos;
 	protected int resistencia;
-	protected int daño;
+	protected int danio;
 	protected int rango;
 	private volatile  boolean moviendo=false;
 	
@@ -20,8 +20,8 @@ public abstract class Personajes extends gameObject {
 		return resistencia;
 	}
 	
-	public int getDaño(){
-		return daño;
+	public int getDanio(){
+		return danio;
 	}
 	
 	
