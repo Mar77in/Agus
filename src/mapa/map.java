@@ -30,7 +30,7 @@ public class map{
 		gui.setResizable(false);
 		celdas= new celda[10][10];
 		
-		//Aï¿½adimos el fondo
+		//Añadimos el fondo
 		
 		JLabel fondo=new JLabel(new ImageIcon(this.getClass().getResource("/Archivos/fondo.jpg")));
 		fondo.setBounds(0, 0, 592,592);
@@ -82,13 +82,13 @@ public class map{
 	    		gameObject[] objetos=celdas[x][j].getObjects();
 	    		if(objetos[0]!=null){
 	    			JLabel graf=objetos[0].getGrafico();
-	    			graf.setBounds(32+40*x,160+40*j,40,40);
+	    			graf.setBounds(32+16*x,128+16*j,16,16);
 	    		    gui.add(graf,new Integer(1));
 	    			
 	    		}else
 	    			if(objetos[2]!=null){
 	    				JLabel graf=objetos[2].getGrafico();
-	    				graf.setBounds(32+40*x,160+40*j,40,40);
+	    				graf.setBounds(32+16*x,128+16*j,16,16);
 	    				gui.add(graf,new Integer(3));
 	    			}
 	    		  
