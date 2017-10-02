@@ -8,7 +8,7 @@ import javax.swing.border.EmptyBorder;
 
 import GUI.GUI;
 import Personajes.Jugador;
-import Personajes.jugadorBasico;
+import Personajes.JugadorBasico;
 import mapa.map;
 
 public class Juego {

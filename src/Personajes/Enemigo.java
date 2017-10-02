@@ -1,14 +1,12 @@
 package Personajes;
 
-import java.awt.Image;
-
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import mapa.celda;
 
-public class Jugador extends Personajes{
+public class Enemigo extends Personajes {
 	
 	protected int vidas;
 	protected int frecuencia_disparos;
@@ -16,9 +14,9 @@ public class Jugador extends Personajes{
 	private int ancho;
 	
 	
-	
-	public Jugador(celda c, int prof){
-    	alto=30;
+	public Enemigo(celda c,int prof) {
+		
+		alto=30;
     	ancho=30;
     	cell=c;
     	vidas=3;
@@ -26,31 +24,28 @@ public class Jugador extends Personajes{
     	graficos= new Icon[4];
     	grafico=new JLabel();
     	setGraficos();
-    }
-	
-	
+		
+	}
 	
 	public void setGraficos() {
 		
-		graficos[1]=new ImageIcon(this.getClass().getResource("/Archivos/megaCharizard.gif"));
+		graficos[1]=new ImageIcon(this.getClass().getResource("/Archivos/j1.png"));
 		
 		grafico.setIcon(graficos[1]);
 	}
 	
 	public int getAlto(){
-    	 return alto;
-    }
-    
+   	 return alto;
+   }
+   
 	public int getAncho(){
-    	 return ancho;
-    }
-     
-    public int getFrecuenciaDisparos(){
-    	 return frecuencia_disparos;
-    }
+   	 return ancho;
+   }
     
-  
-     
+   public int getFrecuenciaDisparos(){
+   	 return frecuencia_disparos;
+   }
+
 
 
 }
